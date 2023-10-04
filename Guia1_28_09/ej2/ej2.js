@@ -6,4 +6,4 @@ function contarPalabras(oracion){
 }
 
 
-console.log(contarPalabras("oracione con un numero de palabras que no conósco, vamos a ver cuantas hay ñ. eññ. ç"))
+console.log(contarPalabras("oracione con un numero de palabras que no conósco, vamos a ver cuantas hay ñ. eññ. ça"))
