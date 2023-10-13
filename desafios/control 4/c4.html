@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=7, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <h1>Calculadora IMC</h1>
+    <form action="">
+        <label for="nombre">Nombre: </label><input type="text" id="nombre"><br>
+        <label for="peso">Peso (kg): </label><input type="number" id="peso"><br>
+        <label for="altura">Altura (cm): </label><input type="number" id="altura"><br>
+        <label for="genero">Genero: </label><select id="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select><br>
+        <label for="actividad">Actividad fisica: </label><select id="actividad">
+            <option value="1.2">Sedentario</option>
+            <option value="1.55">Moderado</option>
+            <option value="1.9">Activo</option>
+        </select><br>
+        <input type="button" onclick="obtenerResultados()" value="Calcular">
+    </form>
+    <div>
+        <h2 id="resultados">Resultados</h2>
+        <label>IMC: </label><label id="imc"></label><br>
+        <label>Clasificacion: </label><label id="clasificacion"></label><br>
+        <label>Gasto energetico diario: </label><label id="gastoEnergetico"></label><br>
+        <label>Estado nutricional: </label><label id="nutricion"></label><br>
+    </div>
+<script src="c4.js"></script>
+</body>
+</html>
