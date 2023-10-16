@@ -42,7 +42,9 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#" class="smoothscroll">Already a member?</a></li>
+          <li><a href="#headerwrap" class="smoothscroll">INICIO</a></li>
+          <li><a href="#equipo" class="smoothscroll">EQUIPO</a></li>
+          <li><a href="#contact" class="smoothscroll">CONTACTO</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
@@ -195,7 +197,7 @@
   <div class="container">
     <div class="row mt centered">
       <div class="col-lg-6 col-lg-offset-3">
-        <h1>Our Awesome Team.<br />Design Lovers.</h1>
+        <h1 id="equipo">Our Awesome Team.<br />Design Lovers.</h1>
         <h3>It is a long established fact that a reader will be distracted by the readable content of a page when
           looking at its layout.</h3>
       </div>
@@ -290,6 +292,67 @@
 
             <div class="form-send">
               <button type="submit" class="btn btn-large">Send Message</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="centered">Formulario de Inscripción</h2>
+          <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+
+            <div class="form-inline">
+              <div class="form-group">
+                <label for="nombre"><Nav></Nav>Nombre:</label><br>
+                <input type="nombre" name="nombre" class="form-control" id="nombre-contacto" 
+                  data-rule="minlen:3" data-msg="Largo minimo 3 letras">
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido: </label><br>
+                <input type="apellido" name="apellido" class="form-control" id="apellido-contacto"
+                  data-rule="minlen:4" data-msg="Largo minimo 4 letras">
+                <div class="validate"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" name="email" class="form-control" id="contact-email" placeholder=""
+                data-rule="email" data-msg="Por favor introducir un email valido">
+              <div class="validate"></div>
+            </div>
+
+            <div class="form-group">
+              <div class="checkbox">
+              <label  for="genero">Sexo:</label>
+              <label class="checkbox"  for="genero">
+                <input type="checkbox" class="checkbox" name="genero" id="genero"> Masculino
+              </label>
+              <label class="checkbox" for="genero">
+                <input type="checkbox" class="checkbox" name="genero" id="genero"> Femenino
+              </label>
+              <div class="validate"></div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="pdf">Suba el documento PDF</label>
+              <input type="file" name="pdf" id="pdf" accept=".PDF,.pdf">
+              <div class="validate"></div>
+            </div>
+
+            <div class="loading"></div>
+            <div class="error-message"></div>
+            <div class="sent-message">Tu formulario ha sido enviado con exito</div>
+
+            <div class="form-send">
+              <button type="submit" class="btn btn-large">Enviar datos</button>
             </div>
 
           </form>

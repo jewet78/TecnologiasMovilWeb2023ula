@@ -7,6 +7,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
 }
+.smoothscroll{
+  font-family: 'trebuchet MS';
+  font-size: 12px;
+
+}
+.alinear{
+  display:inline-block;
+}
 
 /* Titulos */
 
@@ -164,6 +172,9 @@ i {
 /* Formulario de Contacto */
 
 #contact {
+  padding: 40px 0;
+}
+#contact2 {
   padding: 40px 0;
 }
 
