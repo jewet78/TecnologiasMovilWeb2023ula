@@ -1,0 +1,22 @@
+{"datos":[
+    {
+        "nombre":"Osorno",
+        "subTexto":"sub texto",
+        "image_path":"assets/img/osorno.jpg"
+    },
+    {
+        "nombre":"Puerto Octay",
+        "subTexto":"sub texto",
+        "image_path":"assets/img/ptoOctay.jpg" 
+    },
+    {
+        "nombre":"Purranque",
+        "subTexto":"sub texto",
+        "image_path":"assets/img/purranque.jpg"
+    },
+    {
+        "nombre":"Puyehue",
+        "subTexto":"sub texto",
+        "image_path":"assets/img/puyehue.jpg"
+    }
+]}
