@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>generar contraseñas</h1>
+    <form >
+        <label for="longitud">Longitud de la contraseña </label>
+        <input type="number" name="longitud" id="longitud" value="8" max="20" min="8">
+        <br>
+        <label for="numero">Incluir numeros </label>
+        <input type="checkbox" name="numero" id="numero"><br>
+        <label for="mayus">Incluir letras Mayúsculas </label>
+        <input type="checkbox" name="mayus" id="mayus"><br>
+        <label for="minus">Incluir letras Minúsculas </label>
+        <input type="checkbox" name="minus" id="minus"><br>
+        <label for="simbolo">Incluir caracteres especiales </label>
+        <input type="checkbox" name="simbolo" id="simbolo"><br>
+    </form>
+    <button onclick="genPass()">generar</button>
+    <label id="pass" value=""></label>
+    <script src="generar-contrasenas.js"></script>
+    
+</body>
+</html>

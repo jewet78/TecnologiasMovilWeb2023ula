@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:seqs_monitor/finalizado.dart';
 import 'main.dart';
 
-
+//el menu esta por separado aqui, para usarlo donde se  necesite
 class CustomDrawer extends StatelessWidget {
   final BuildContext context;
 
@@ -15,20 +15,24 @@ class CustomDrawer extends StatelessWidget {
         padding: EdgeInsets.only(top:40,left: 5),
         children: <Widget>[
           const Text("Menu",style: TextStyle(fontSize: 23,fontWeight: FontWeight.bold)),
+          
+          //cada opcion del menu va aqui en una listTile
+
           ListTile(
             title: const Text('Inicio'),
             onTap: () {
-              Navigator.pop(context); // Close the drawer
+              Navigator.pop(context); 
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const HomeScreen()),
               );
             },
           ),
+          
           ListTile(
             title: const Text('Tareas Pendientes'),
             onTap: () {
-              Navigator.pop(context); // Close the drawer
+              Navigator.pop(context); 
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const Pendientes()),
@@ -38,7 +42,7 @@ class CustomDrawer extends StatelessWidget {
           ListTile(
             title: const Text('En Curso'),
             onTap: () {
-              Navigator.pop(context); // Close the drawer
+              Navigator.pop(context); 
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const EnCurso()),
@@ -49,7 +53,7 @@ class CustomDrawer extends StatelessWidget {
           ListTile(
             title: const Text('Finalizado'),
             onTap: () {
-              Navigator.pop(context); // Close the drawer
+              Navigator.pop(context); 
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const Finalizado()),

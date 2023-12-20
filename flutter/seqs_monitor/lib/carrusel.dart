@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:carousel_slider/carousel_slider.dart';
+//widget del carrusel, recibe una lista de widgets a mostrar
 class Carrusel extends StatelessWidget {
   final List<Widget> cards; // Lista de widgets que representan las tarjetas
 
@@ -14,7 +15,7 @@ class Carrusel extends StatelessWidget {
         return CarouselSlider.builder(
           itemCount: cards.length,
           itemBuilder: (context, index, _) {
-            return cards[index]; // Retorna cada tarjeta de la lista
+            return cards[index];
           },
           options: CarouselOptions(
             viewportFraction: 1,

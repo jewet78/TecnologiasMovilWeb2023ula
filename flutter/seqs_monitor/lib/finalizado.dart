@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'elementos.dart'; // Importa el widget de la Card1 que hemos creado anteriormente // Importa el widget de la Card2 que hemos creado anteriormente
-import 'carrusel.dart'; // Importa el widget Carrusel
+import 'elementos.dart'; // Importa el widget de la Card1 que hemos creado anteriormente 
 import 'detalles.dart';
 
+//esta widget devuelve una card que expande su contenido
 class CustomExpansionTileCard extends StatelessWidget {
   final String title;
   final List<Widget> children;
@@ -23,6 +23,7 @@ class CustomExpansionTileCard extends StatelessWidget {
   }
 }
 
+//pantalla de finalizado
 class FinalizadoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

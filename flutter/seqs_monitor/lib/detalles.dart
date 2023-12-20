@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Aqui esta la pantalla de detalles
 class DetallesScreen extends StatelessWidget {
   final String itemName;
 
@@ -11,7 +12,7 @@ class DetallesScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Detalles de $itemName'),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: Icon(Icons.arrow_back), //tiene una flecha para regresar a la pantalla anterior
           onPressed: () {
             Navigator.of(context).pop();
           },
@@ -30,7 +31,7 @@ class DetallesScreen extends StatelessWidget {
       ),
     );
   }
-
+  //aqui se declara la card que contiene la tabla
   Widget _buildDetailCard(String cardTitle) {
     return Card(
       elevation: 4,
@@ -68,7 +69,7 @@ class DetallesScreen extends StatelessWidget {
       ),
     );
   }
-
+  //aqui se declara la forma de la tabla
   TableRow _buildTableRow(String first,String start, String end, String nBases, String ambigs, String polymer, String numSeqs) {
     return TableRow(
       children: [

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'detalles.dart';
                  
+//aqui se declaran varios widget
 
+//la minicard es una card que contiene items expandibles
 class MiniCard extends StatefulWidget {
   final String title;
   final List<ExpandableItem> items;
@@ -35,7 +37,7 @@ class _MiniCardState extends State<MiniCard> {
               widget.title,
               style: Theme.of(context).textTheme.titleLarge,
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 10),    
             ListView.separated(
               shrinkWrap: true,
               itemCount: widget.items.length,
@@ -59,9 +61,12 @@ class _MiniCardState extends State<MiniCard> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(widget.items[index].content),
-                            ElevatedButton(
+                            
+                            //boton que lleva a la pagina detalles
+
+                            ElevatedButton(       
                               onPressed: () {
-                                // Navigate to the details screen for the specific item
+
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
@@ -87,6 +92,8 @@ class _MiniCardState extends State<MiniCard> {
   }
 }
 
+//aqui se declara el item expandible
+//no recuerdo que hace, pero me dio miedo sacarlo
 class ExpandableItem {
   final String title;
   final String content;
@@ -94,7 +101,7 @@ class ExpandableItem {
   ExpandableItem({required this.title, required this.content});
 }
 
-
+//card1 es un widget que muestra un "secuencia" y sus detalles
 class Card1 extends StatelessWidget {
   final String itemName;
   final int completedSteps;
@@ -141,7 +148,7 @@ class Card1 extends StatelessWidget {
                 ),
               ],
             ),
-            // Aquí puedes agregar más detalles o personalizar según tus necesidades
+      
           ],
         ),
       ),
@@ -149,7 +156,7 @@ class Card1 extends StatelessWidget {
   }
 }
 
-
+//este widget esta solo para enlazar datos con el archivo detalles y hacer una tabla
 class CustomTable extends StatelessWidget {
   final List<List<String>> tableData;
 
@@ -181,6 +188,7 @@ class CustomTable extends StatelessWidget {
 }
 
 
+//card2 es un widget tipo card que contine una tabla
 
 class Card2 extends StatelessWidget {
   final String title;
@@ -217,34 +225,3 @@ class Card2 extends StatelessWidget {
   }
 }
 
-
-
-/*
-class YourPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    List<ExpandableItem> expandableItems = [
-      ExpandableItem(
-        title: 'Item 1',
-        content: 'Additional information for Item 1',
-      ),
-      ExpandableItem(
-        title: 'Item 2',
-        content: 'Additional information for Item 2',
-      ),
-      // Add more items here as needed
-    ];
-
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Accordion Example'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: MiniCard(title: 'Accordion', items: expandableItems),
-      ),
-    );
-  }
-}
-
-*/

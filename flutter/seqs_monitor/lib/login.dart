@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'main.dart';
 
-
+//pantalla de login
 class LogScreen extends StatefulWidget {
   const LogScreen({super.key});
 
@@ -21,7 +21,7 @@ class _LogScreenState extends State<LogScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           const Image( //se declara la imagen
-                image: AssetImage('assets/logo/logodna2.png'),
+                image: AssetImage('assets/logo/logodna2.png'), //icono
                 fit: BoxFit.cover,
               height: 150,
               width: 150,
@@ -92,9 +92,10 @@ class _LogScreenState extends State<LogScreen> {
             padding: const EdgeInsets.symmetric(vertical: 16.0),
             child: ElevatedButton(
               onPressed: () {
-                // Validate will return true if the form is valid, or false if
-                // the form is invalid.
-                if (_formKey.currentState!.validate()) {
+                
+
+                if (_formKey.currentState!.validate()) {//si los datos son validos devuelve true, si no false
+                                                        //no hay deteccion de usuarios por ahora
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const HomeScreen()),
@@ -111,7 +112,7 @@ class _LogScreenState extends State<LogScreen> {
   }
 }
 
-// zona check box
+
 class CheckRecordar extends StatefulWidget {
   const CheckRecordar({super.key});
 

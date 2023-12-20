@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'elementos.dart';
 
+//pantalla de inicio
 class InicioScreen extends StatelessWidget {
   final List<String> listaDePendientes = [
     'F3D143',
@@ -23,7 +24,7 @@ class InicioScreen extends StatelessWidget {
             _buildSequenceCard('Pendientes', primerosTresItems),
             _buildSequenceCard('En Curso',primerosTresItems),
             _buildSequenceCard('Finalizadas',primerosTresItems),
-            // ...resto del código
+
           ],
         ),
       ),

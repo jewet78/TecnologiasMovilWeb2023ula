@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'detalles.dart';
 
+//la pagina de pendientes esta aqui
 class PendientesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,13 +12,12 @@ class PendientesScreen extends StatelessWidget {
           children: [
             _buildExpandableCard('Elemento 1', 'Tamaño: 100', 'Número de secuencias: 50',context),
             _buildExpandableCard('Elemento 2', 'Tamaño: 75', 'Número de secuencias: 30',context),
-            // Add more expandable cards as needed
           ],
         ),
       ),
     );
   }
-
+  
   Widget _buildExpandableCard(String itemName, String size, String numSequences,BuildContext context) {
     return Card(
       margin: const EdgeInsets.symmetric(vertical: 8.0),
@@ -38,7 +38,6 @@ class PendientesScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              // Navigate to the details screen for the specific item
               Navigator.push(
                 context,
                 MaterialPageRoute(
